@@ -11,11 +11,11 @@ from main import find_largest
 
 class TestLargestNumber(unittest.TestCase):
     def test_largest(self):
-        self.assertEqual(find_largest(10, 20, 30)
-        self.assertEqual(find_largest(50, 20, 10)
-        self.assertEqual(find_largest(-1, -5, -3)
-        self.assertEqual(find_largest(5, 5, 5)
-        self.assertEqual(find_largest(7, 9, 9)
+        self.assertEqual(find_largest(10, 20, 30), 30)
+        self.assertEqual(find_largest(50, 20, 10), 50)
+        self.assertEqual(find_largest(-1, -5, -3), -1)
+        self.assertEqual(find_largest(5, 5, 5), 5)
+        self.assertEqual(find_largest(7, 9, 9), 9)
 
 if __name__ == '__main__':
     unittest.main()
