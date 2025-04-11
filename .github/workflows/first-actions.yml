@@ -3,7 +3,7 @@ name: My First GitHub Actions
 on:
   push:
     paths:
-      - 'src/**'  
+      - '**.py'  # Trigger only on Python file changes
 
 jobs:
   build:
@@ -28,5 +28,4 @@ jobs:
 
       - name: Run tests
         run: |
-          cd src
-          python -m pytest  
+          python -m pytest  # Run all testable Python files from the root
